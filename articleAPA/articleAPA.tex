@@ -1,0 +1,51 @@
+\documentclass[man, 12pt]{apa6}
+
+% LATEX packages packages
+\usepackage[style=apa, backend=biber]{biblatex}
+\usepackage[american]{babel}
+\DeclareLanguageMapping{american}{american-apa}
+
+\addbibresource{bibfile.bib}
+
+\title{Title of the paper}
+\shorttitle{Short title}
+\author{author1firstName author1secondName \& author2firstNam
+author2secondName}
+\affiliation{Department of Psychology, University of XXX}
+\leftheader{author1secondName}
+\authornote{
+  Address editorial correspondence to:\\
+  author1firstName author1secondName\\
+  University of XXX\\
+  Address 1\\
+  Address 2\\
+  Address 3\\
+  Email: xxx.xxx@uni-xxx\\
+  Tel: +xx xxx-xxxx
+}
+
+\abstract{}
+\keywords{keyword1, keyword2, keyword3}
+
+\begin{document}
+\maketitle
+The introduction .. \textcite{botvinick2001conflict} 
+
+\textcite{botvinick2001conflict} found that .. \\
+It was found that .. \parencite[][]{simon1969reactions, eriksen1974effects, stroop1935studies} 
+
+\section{Method}
+\subsection{Participants}
+\subsection{Apparatus and Stimuli}
+\subsection{Procedure}
+
+\subsection{Design}
+
+\section{Results}
+
+\section{Discussion}
+
+\printbibliography
+
+\end{document}
+
