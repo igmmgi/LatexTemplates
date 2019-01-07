@@ -1,0 +1,88 @@
+\documentclass[man, 12pt]{apa6}
+
+% LATEX packages packages
+\usepackage[style=apa, backend=biber]{biblatex}
+\usepackage[american]{babel}
+\usepackage{Sweave}
+\usepackage{longtable}
+\DeclareLanguageMapping{american}{american-apa}
+
+\addbibresource{bibfile.bib}
+
+\title{Title of the paper}
+\shorttitle{Short title}
+\author{author1firstName author1secondName \& author2firstNam
+author2secondName}
+\affiliation{Department of Psychology, University of XXX}
+\leftheader{author1secondName}
+\authornote{
+  Address editorial correspondence to:\\
+  author1firstName author1secondName\\
+  University of XXX\\
+  Address 1\\
+  Address 2\\
+  Address 3\\
+  Email: xxx.xxx@uni-xxx\\
+  Tel: +xx xxx-xxxx
+}
+
+\abstract{}
+\keywords{keyword1, keyword2, keyword3}
+
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+\maketitle
+The introduction .. \textcite{botvinick2001conflict}
+
+\textcite{botvinick2001conflict} found that .. \\
+It was found that .. \parencite[][]{simon1969reactions, eriksen1974effects, stroop1935studies}
+
+\section{Method}
+\subsection{Participants}
+\subsection{Apparatus and Stimuli}
+\subsection{Procedure}
+
+\subsection{Design}
+
+\section{Results}
+
+<<data, echo=FALSE,results=hide>>=
+library(psychReport)
+requiredPackages(c("tidyverse", "ez"))
+
+# make up some data with main effect of Compatibility, main effect of Side, and
+#   and interaction between Compatibility and Side
+dat <- createDF(nVP = 20, nTrl = 30,
+                design = list("Comp" = c("Comp", "Incomp"),
+                              "Side" = c("Left", "Right")))
+dat <- addDataDF(dat,
+                 RT = list(list(c("Comp:Comp",   "Side:Left"),  vals = c(500, 100, 150)),
+                           list(c("Comp:Comp",   "Side:Right"), vals = c(520, 100, 150)),
+                           list(c("Comp:Incomp", "Side:Left"),  vals = c(530, 100, 150)),
+                           list(c("Comp:Incomp", "Side:Right"), vals = c(580, 100, 150))))
+
+datAgg <- dat %>%
+  group_by(VP, Comp, Side) %>%
+  summarize(N  = n(),
+            RT = mean(RT))
+
+anovaRT <- ezANOVA(datAgg, dv = .(RT), wid = .(VP), within = .(Comp, Side), 
+                   detailed = TRUE, return_aov = TRUE)
+anovaRT <- aovTable(anovaRT)
+
+compEffect <- statStrAov(anovaRT, "Comp")
+
+@
+
+<<anova_table, echo=FALSE, results=tex>>=
+printTable(anovaRT$ANOVA, caption = "ANOVA Table: RT")
+@
+
+There was significant main effect of Compatibility, \Sexpr{compEffect}.
+
+\section{Discussion}
+
+\printbibliography
+
+\end{document}
+

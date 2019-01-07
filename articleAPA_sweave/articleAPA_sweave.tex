@@ -1,0 +1,70 @@
+\documentclass[man, 12pt]{apa6}
+
+% LATEX packages packages
+\usepackage[style=apa, backend=biber]{biblatex}
+\usepackage[american]{babel}
+\usepackage{Sweave}
+\usepackage{longtable}
+\DeclareLanguageMapping{american}{american-apa}
+
+\addbibresource{bibfile.bib}
+
+\title{Title of the paper}
+\shorttitle{Short title}
+\author{author1firstName author1secondName \& author2firstNam
+author2secondName}
+\affiliation{Department of Psychology, University of XXX}
+\leftheader{author1secondName}
+\authornote{
+  Address editorial correspondence to:\\
+  author1firstName author1secondName\\
+  University of XXX\\
+  Address 1\\
+  Address 2\\
+  Address 3\\
+  Email: xxx.xxx@uni-xxx\\
+  Tel: +xx xxx-xxxx
+}
+
+\abstract{}
+\keywords{keyword1, keyword2, keyword3}
+
+\begin{document}
+\input{articleAPA_sweave-concordance}
+\maketitle
+The introduction .. \textcite{botvinick2001conflict}
+
+\textcite{botvinick2001conflict} found that .. \\
+It was found that .. \parencite[][]{simon1969reactions, eriksen1974effects, stroop1935studies}
+
+\section{Method}
+\subsection{Participants}
+\subsection{Apparatus and Stimuli}
+\subsection{Procedure}
+
+\subsection{Design}
+
+\section{Results}
+
+
+% latex table generated in R 3.5.1 by xtable 1.8-3 package
+% Mon Jan  7 14:15:33 2019
+\begin{longtable}{lrrllll}
+\caption{ANOVA Table: RT} \\ 
+  \hline
+Effect & DFn & DFd & \textit{F} & \textit{p} & \textit{p}<.05 & $\eta_{p}^2$ \\ 
+  \hline
+Comp &    1 &   19 & 38.61 & 0.00 & *** & 0.67 \\ 
+  Side &    1 &   19 & 24.28 & 0.00 & *** & 0.56 \\ 
+  Comp:Side &    1 &   19 &  5.18 & 0.03 & * & 0.21 \\ 
+   \hline
+\hline
+\end{longtable}
+There was significant main effect of Compatibility, \emph{F}(1, 19) = 38.61, \emph{p} < .001, $\eta_{p}^2$ = 0.67.
+
+\section{Discussion}
+
+\printbibliography
+
+\end{document}
+
