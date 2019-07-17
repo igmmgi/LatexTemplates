@@ -1,0 +1,15 @@
+[0] Config.pm:304> INFO - This is Biber 2.12
+[0] Config.pm:307> INFO - Logfile is 'articleAPA_knitr.blg'
+[22] biber:315> INFO - === Mi Jul 17, 2019, 16:08:49
+[40] Biber.pm:371> INFO - Reading 'articleAPA_knitr.bcf'
+[95] Biber.pm:889> INFO - Found 4 citekeys in bib section 0
+[107] Biber.pm:4093> INFO - Processing section 0
+[115] Biber.pm:4254> INFO - Looking for bibtex format file 'bibfile.bib' for section 0
+[116] bibtex.pm:1512> INFO - LaTeX decoding ...
+[122] bibtex.pm:1329> INFO - Found BibTeX data source 'bibfile.bib'
+[151] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[151] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[151] Biber.pm:3921> INFO - Sorting list 'apa/global//global/global' of type 'entry' with template 'apa' and locale 'en-US'
+[151] Biber.pm:3927> INFO - No sort tailoring available for locale 'en-US'
+[156] bbl.pm:636> INFO - Writing 'articleAPA_knitr.bbl' with encoding 'UTF-8'
+[159] bbl.pm:739> INFO - Output to articleAPA_knitr.bbl

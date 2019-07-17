@@ -1,0 +1,187 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.0 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{apa/global//global/global}
+    \entry{botvinick2001conflict}{article}{}
+      \name{author}{5}{}{%
+        {{uniquename=0,uniquepart=base,hash=cb26a61e230d172a60ade11b9f69bdba}{%
+           family={Botvinick},
+           familyi={B\bibinitperiod},
+           given={Matthew\bibnamedelima M},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=e75bb0b55f20d3e5cc1d1e2ec85860cd}{%
+           family={Braver},
+           familyi={B\bibinitperiod},
+           given={Todd\bibnamedelima S},
+           giveni={T\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=7cfa4ddc13b0da527952f57f52dbd60e}{%
+           family={Barch},
+           familyi={B\bibinitperiod},
+           given={Deanna\bibnamedelima M},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=83283b764d3caa75c7327069ec97c7ab}{%
+           family={Carter},
+           familyi={C\bibinitperiod},
+           given={Cameron\bibnamedelima S},
+           giveni={C\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=74f9e2bf1a38596826af4f725fec39ed}{%
+           family={Cohen},
+           familyi={C\bibinitperiod},
+           given={Jonathan\bibnamedelima D},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {American Psychological Association}%
+      }
+      \strng{namehash}{8b1078d450a2d9223d91443f6fc83506}
+      \strng{fullhash}{9e1aa5aa6c4034b3b0b2c781e726d933}
+      \strng{bibnamehash}{9e1aa5aa6c4034b3b0b2c781e726d933}
+      \strng{authorbibnamehash}{9e1aa5aa6c4034b3b0b2c781e726d933}
+      \strng{authornamehash}{8b1078d450a2d9223d91443f6fc83506}
+      \strng{authorfullhash}{9e1aa5aa6c4034b3b0b2c781e726d933}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Psychological Review}
+      \field{number}{3}
+      \field{title}{Conflict monitoring and cognitive control.}
+      \field{volume}{108}
+      \field{year}{2001}
+      \field{pages}{624\bibrangedash 652}
+      \range{pages}{29}
+    \endentry
+    \entry{eriksen1974effects}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=1,uniquepart=given,hash=58313810fb333f7070e52d934528f448}{%
+           family={Eriksen},
+           familyi={E\bibinitperiod},
+           given={Barbara\bibnamedelima A},
+           giveni={B\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=1}}%
+        {{uniquename=1,uniquepart=given,hash=3c6cf25c20b5ea2d1859c82ba49b35dd}{%
+           family={Eriksen},
+           familyi={E\bibinitperiod},
+           given={Charles\bibnamedelima W},
+           giveni={C\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=1}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{c1d4469a5c69cd4f353deec600a6c75b}
+      \strng{fullhash}{c1d4469a5c69cd4f353deec600a6c75b}
+      \strng{bibnamehash}{c1d4469a5c69cd4f353deec600a6c75b}
+      \strng{authorbibnamehash}{c1d4469a5c69cd4f353deec600a6c75b}
+      \strng{authornamehash}{c1d4469a5c69cd4f353deec600a6c75b}
+      \strng{authorfullhash}{c1d4469a5c69cd4f353deec600a6c75b}
+      \field{sortinit}{E}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Perception \& Psychophysics}
+      \field{number}{1}
+      \field{title}{Effects of noise letters upon the identification of a target letter in a nonsearch task}
+      \field{volume}{16}
+      \field{year}{1974}
+      \field{pages}{143\bibrangedash 149}
+      \range{pages}{7}
+    \endentry
+    \entry{simon1969reactions}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=62ba038b4cb07aec0de36dc8a28a87b1}{%
+           family={Simon},
+           familyi={S\bibinitperiod},
+           given={J\bibnamedelima Richard},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {American Psychological Association}%
+      }
+      \strng{namehash}{62ba038b4cb07aec0de36dc8a28a87b1}
+      \strng{fullhash}{62ba038b4cb07aec0de36dc8a28a87b1}
+      \strng{bibnamehash}{62ba038b4cb07aec0de36dc8a28a87b1}
+      \strng{authorbibnamehash}{62ba038b4cb07aec0de36dc8a28a87b1}
+      \strng{authornamehash}{62ba038b4cb07aec0de36dc8a28a87b1}
+      \strng{authorfullhash}{62ba038b4cb07aec0de36dc8a28a87b1}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Experimental Psychology}
+      \field{number}{1}
+      \field{title}{Reactions toward the source of stimulation.}
+      \field{volume}{81}
+      \field{year}{1969}
+      \field{pages}{174\bibrangedash 176}
+      \range{pages}{3}
+    \endentry
+    \entry{stroop1935studies}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=d9efd7fcd0d83e19956a8e4518e14868}{%
+           family={Stroop},
+           familyi={S\bibinitperiod},
+           given={J\bibnamedelima Ridley},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Psychological Review Company}%
+      }
+      \strng{namehash}{d9efd7fcd0d83e19956a8e4518e14868}
+      \strng{fullhash}{d9efd7fcd0d83e19956a8e4518e14868}
+      \strng{bibnamehash}{d9efd7fcd0d83e19956a8e4518e14868}
+      \strng{authorbibnamehash}{d9efd7fcd0d83e19956a8e4518e14868}
+      \strng{authornamehash}{d9efd7fcd0d83e19956a8e4518e14868}
+      \strng{authorfullhash}{d9efd7fcd0d83e19956a8e4518e14868}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Experimental Psychology}
+      \field{number}{6}
+      \field{title}{Studies of interference in serial verbal reactions.}
+      \field{volume}{18}
+      \field{year}{1935}
+      \field{pages}{643\bibrangedash 662}
+      \range{pages}{20}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

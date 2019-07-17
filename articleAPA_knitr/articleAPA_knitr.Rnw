@@ -3,7 +3,7 @@
 % LATEX packages packages
 \usepackage[style=apa, backend=biber]{biblatex}
 \usepackage[american]{babel}
-\usepackage{Sweave}
+\usepackage{csquotes}
 \usepackage{longtable}
 \DeclareLanguageMapping{american}{american-apa}
 
@@ -30,7 +30,6 @@ author2secondName}
 \keywords{keyword1, keyword2, keyword3}
 
 \begin{document}
-\SweaveOpts{concordance=TRUE}
 \maketitle
 The introduction .. \textcite{botvinick2001conflict}
 
@@ -46,7 +45,7 @@ It was found that .. \parencite[][]{simon1969reactions, eriksen1974effects, stro
 
 \section{Results}
 
-<<data, echo=FALSE,results=hide>>=
+<<data, echo=FALSE, include = FALSE>>=
 library(psychReport)
 requiredPackages(c("tidyverse", "ez"))
 
@@ -74,7 +73,7 @@ compEffect <- statStrAov(anovaRT, "Comp")
 
 @
 
-<<anova_table, echo=FALSE, results=tex>>=
+<<anova_table, echo=FALSE, results='asis'>>=
 printTable(anovaRT$ANOVA, caption = "ANOVA Table: RT")
 @
 
