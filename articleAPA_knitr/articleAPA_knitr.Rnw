@@ -65,7 +65,7 @@ datAgg <- dat %>%
   summarize(N  = n(),
             RT = mean(RT))
 
-anovaRT <- ezANOVA(datAgg, dv = .(RT), wid = .(VP), within = .(Comp, Side), 
+anovaRT <- ezANOVA(datAgg, dv = .(RT), wid = .(VP), within = .(Comp, Side),
                    detailed = TRUE, return_aov = TRUE)
 anovaRT <- aovTable(anovaRT)
 
@@ -73,7 +73,7 @@ compEffect <- statStrAov(anovaRT, "Comp")
 
 @
 
-<<anova_table, echo=FALSE, results='asis'>>=
+<<anova_table, echo=FALSE, include=FALSE >>=
 printTable(anovaRT$ANOVA, caption = "ANOVA Table: RT")
 @
 
