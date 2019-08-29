@@ -1,5 +1,0 @@
-[0] Config.pm:304> INFO - This is Biber 2.12
-[0] Config.pm:307> INFO - Logfile is 'articleAPA_knitr.Rnw.blg'
-[34] biber:315> INFO - === Mi Jul 17, 2019, 16:32:30
-[139] Utils.pm:209> ERROR - Cannot find control file 'articleAPA_knitr.Rnw.bcf'! - Did latex run successfully on your .tex file before you ran biber?
-[139] Biber.pm:114> INFO - ERRORS: 1
