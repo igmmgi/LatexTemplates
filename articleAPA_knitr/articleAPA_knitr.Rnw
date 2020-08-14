@@ -54,11 +54,12 @@ requiredPackages(c("tidyverse", "ez"))
 dat <- createDF(nVP = 20, nTrl = 30,
                 design = list("Comp" = c("Comp", "Incomp"),
                               "Side" = c("Left", "Right")))
+
 dat <- addDataDF(dat,
-                 RT = list(list(c("Comp:Comp",   "Side:Left"),  vals = c(500, 100, 150)),
-                           list(c("Comp:Comp",   "Side:Right"), vals = c(520, 100, 150)),
-                           list(c("Comp:Incomp", "Side:Left"),  vals = c(530, 100, 150)),
-                           list(c("Comp:Incomp", "Side:Right"), vals = c(580, 100, 150))))
+                 RT = list("Comp:Side_Comp:Left" = c(500, 100, 150),
+                           "Comp:Side_Comp:Right" = c(520, 100, 150),
+                           "Comp:Side_Incomp:Left" = c(530, 100, 150),
+                           "Comp:Side_Incomp:Right" = c(580, 100, 150)))
 
 datAgg <- dat %>%
   group_by(VP, Comp, Side) %>%
