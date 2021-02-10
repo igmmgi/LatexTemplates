@@ -52,14 +52,14 @@ requiredPackages(c("tidyverse", "ez"))
 # make up some data with main effect of Compatibility, main effect of Side, and
 #   and interaction between Compatibility and Side
 dat <- createDF(nVP = 20, nTrl = 30,
-                design = list("Comp" = c("Comp", "Incomp"),
-                              "Side" = c("Left", "Right")))
+                design = list("Comp" = c("comp", "incomp"),
+                              "Side" = c("left", "right")))
 
 dat <- addDataDF(dat,
-                 RT = list("Comp:Side_Comp:Left" = c(500, 100, 150),
-                           "Comp:Side_Comp:Right" = c(520, 100, 150),
-                           "Comp:Side_Incomp:Left" = c(530, 100, 150),
-                           "Comp:Side_Incomp:Right" = c(580, 100, 150)))
+                 RT = list("Comp:Side_comp:left" = c(500, 100, 250),
+                           "Comp:Side_comp:right" = c(510, 100, 250),
+                           "Comp:Side_incomp:left" = c(530, 100, 250),
+                           "Comp:Side_incomp:right" = c(540, 100, 250)))
 
 datAgg <- dat %>%
   group_by(VP, Comp, Side) %>%
@@ -74,7 +74,7 @@ compEffect <- statStrAov(anovaRT, "Comp")
 
 @
 
-<<anova_table, echo=FALSE, include=FALSE >>=
+<<anova_table, echo = FALSE, include=TRUE, results = 'asis' >>=
 printTable(anovaRT$ANOVA, caption = "ANOVA Table: RT")
 @
 
