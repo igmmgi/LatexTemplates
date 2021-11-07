@@ -56,10 +56,10 @@ dat <- createDF(nVP = 20, nTrl = 30,
                               "Side" = c("left", "right")))
 
 dat <- addDataDF(dat,
-                 RT = list("Comp:Side_comp:left" = c(500, 100, 250),
-                           "Comp:Side_comp:right" = c(510, 100, 250),
-                           "Comp:Side_incomp:left" = c(530, 100, 250),
-                           "Comp:Side_incomp:right" = c(540, 100, 250)))
+                 RT = list("Comp:Side comp:left" = c(500, 100, 250),
+                           "Comp:Side comp:right" = c(510, 100, 250),
+                           "Comp:Side incomp:left" = c(530, 100, 250),
+                           "Comp:Side incomp:right" = c(540, 100, 250)))
 
 datAgg <- dat %>%
   group_by(VP, Comp, Side) %>%
@@ -85,4 +85,3 @@ There was significant main effect of Compatibility, \Sexpr{compEffect}.
 \printbibliography
 
 \end{document}
-
